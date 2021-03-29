@@ -74,6 +74,7 @@ export default class DndManager {
       dragSourceInitialDepth = 0;
 
       if (component) {
+        console.log('foundCompoennt dnd-manager.js --- ', component);
         const relativePosition = findDOMNode(component).getBoundingClientRect(); // eslint-disable-line react/no-find-dom-node
         const leftShift =
           monitor.getSourceClientOffset().x - relativePosition.left;
